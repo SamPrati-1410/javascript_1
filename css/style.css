@@ -1,0 +1,85 @@
+body{
+    background-color:#7DA3A1;
+}
+#content{
+    margin-top: 8%;
+}
+#form-calc,#shopping-form-input{
+    width: 400px;
+    margin: 0 auto;
+   
+   }
+.form-border{
+    border: 1px solid #fff;
+    width: 400px;
+   }
+#Calculator,#Styling,#Clock{
+    border: 1px solid;
+    border-radius: 3%;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 4.5%;
+    background-color:#34675C;
+    color: #fff;
+    
+}
+
+legend{
+    background-color: #34675C;
+}
+fieldset{
+    background-color: #324851;
+    color: #fff;
+}
+.ML-20{
+    margin-left:20px;
+}
+.MB-20{
+    margin-bottom:20px;
+}
+.MB-10{
+    margin-bottom:10px;
+}
+.MT-20{
+    margin-top: 20px;
+}
+.MT-50{
+    margin-top: 50px;
+}
+.ML-30{
+    margin-left:30px;
+}
+/*#form-calc input{
+    width: 50px;
+}
+#shopping-form-input input{
+    width: 150px;
+}*/
+#buttons button{
+    width: 100px;
+}
+.border{
+    border: 3px double #fff !important;
+    width: 900px;
+    margin: 0 auto;
+}
+.calc,.styling,.clock{
+    display: none;
+}
+li{
+    margin-right: 25px;
+    display:inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+ul{
+    margin: 0;
+}
+#shopping-form button{
+    height: 22px;
+    vertical-align: middle;
+    font-size: 12px;
+    background-color: #86AC41;
+    border: 1px solid #fff;
+}

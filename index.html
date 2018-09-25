@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Case Project | UL styling | Time</title>
+</head>
+
+<body>
+    <main>
+        <section id="topMenu" class="MT-20">
+            <article id="form">
+                <form action="">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto font-weight-bold">Choose your option:</legend>
+                        <div class="form-check form-check-inline ML-30">
+                            <input class="form-check-input" type="radio" name="radio" id="calc" value="Calculator">
+                            <label class="form-check-label font-weight-bold" for="inlineRadio1">Calculator</label>
+                        </div>
+                        <div class="form-check form-check-inline ML-30">
+                            <input class="form-check-input" type="radio" name="radio" id="styling" value="Styling">
+                            <label class="form-check-label font-weight-bold" for="inlineRadio2">List Styling</label>
+                        </div>
+                        <div class="form-check form-check-inline ML-30">
+                            <input class="form-check-input" type="radio" name="radio" id="clock" value="Clock">
+                            <label class="form-check-label font-weight-bold" for="inlineRadio3">Clock</label><br><br><br>
+                        </div><br>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <section id="Calculator" class="calc">
+            <h1 class="message"></h1>
+            <article class="MT-20">
+                <div class="row">
+                    <form action="" id="form-calc">
+                        <canvas id="canvCalculator" width="400" height="75" style="border:1px solid #d3d3d3;" class="MB-20">
+                            Your browser does not support the canvas element.
+                        </canvas>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"></span>
+                                <span class="input-group-text">Num 1</span>
+                            </div>
+                            <input id="input1" type="number" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"></span>
+                                <span class="input-group-text">Num 2</span>
+                            </div>
+                            <input id="input2" type="number" class="form-control">
+                        </div>
+                        <hr>
+                        <div id="buttons">
+                            <div class="row">
+                                <div class="col-6 MT-20 font-weight-bold"><button type="submit" id="add">Add / +</button></div>
+                                <div id="addRes" class="col-5 MT-20 font-weight-bold">0</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 MT-20 font-weight-bold"><button type="submit" id="subtract">Subtract /-</button></div>
+                                <div id="subtractRes" class="col-5 MT-20 font-weight-bold">0</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 MT-20 font-weight-bold"><button type="submit" id="multiply">Multiply /
+                                        *
+                                    </button></div>
+                                <div id="multiplyRes" class="col-5 MT-20 font-weight-bold">0</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 MT-20 font-weight-bold"><button type="submit" id="divide">Divide / '/'</button></div>
+                                <div id="divideRes" class="col-5 MT-20 font-weight-bold">0</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <section id="Styling" class="styling">
+            <article class="MT-20">
+                <div class="row justify-content-center">
+                    <div class='col-5' id="shopping-form-input">
+                        <canvas id="canvStyling" width="400" height="75" style="border:1px solid #d3d3d3;" class="MB-20">
+                            Your browser does not support the canvas element.
+                        </canvas>
+                        <form action="" class="MB-20 form-border">
+
+                            <div>
+                                <input type="text" id="input-form">
+                                <button type="submit" id="addToCart">Add to Cart</button></div>
+                        </form>
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <form action="" id="shopping-form">
+                            <ul id="list-push" class=""></ul>
+                        </form>
+                    </div>
+                    <div class="col-5"></div>
+                </div>
+            </article>
+        </section>
+        <section id="Clock" class="clock">
+            <article class="MT-20">
+                <div class="row justify-content-center MB-20">
+                    <div id="shopping-form-input">
+                        <canvas id="canvClock" width="400" height="75" style="border:1px solid #d3d3d3;" class="MB-10">
+                            Your browser does not support the canvas element.
+                        </canvas>
+                    </div>
+                    <div class="row  justify-content-center"> <canvas id="analog" width="170" height="170" class="MB-10">
+                            Your browser does not support the canvas element.
+                        </canvas></div>
+                    <form action="" class="MB-20 form-border">
+                        <div class="row  justify-content-center">
+                            <div class="col-6 MT-20 font-weight-bold">Time</div>
+                            <div id="displayTime" class="col-5 MT-20 font-weight-bold"></div>
+                        </div>
+                        <div class="row  justify-content-center">
+                            <div class="col-6 MT-20 font-weight-bold">Day</div>
+                            <div id="displayDay" class="col-5 MT-20 font-weight-bold"></div>
+                        </div>
+                        <div class="row  justify-content-center">
+                            <div class="col-6 MT-20 font-weight-bold">Month</div>
+                            <div id="displayMonth" class="col-5 MT-20 font-weight-bold"></div>
+                        </div>
+                        <div class="row  justify-content-center  MB-10">
+                            <div class="col-6 MT-20 font-weight-bold">Year</div>
+                            <div id="displayYear" class="col-5 MT-20 font-weight-bold"></div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/styling_new.js"></script>
+    <script src="scripts/clock.js"></script>
+    <script src="scripts/analogClock.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+</body>
+
+</html>
