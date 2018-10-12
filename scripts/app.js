@@ -39,7 +39,7 @@ function calcMe(e) {
 }
 // radio buttons handling
 var radioBut = document.querySelector('#form');
-radioBut.addEventListener('click', showDiv);
+radioBut.addEventListener('radio', showDiv);
 //show/hide sections based on user choice
 function showDiv(e) {
     e.preventDefault();
