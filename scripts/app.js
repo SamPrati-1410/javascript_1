@@ -42,6 +42,7 @@ var radioBut = document.querySelector('#form');
 radioBut.addEventListener('radio', showDiv);
 //show/hide sections based on user choice
 function showDiv(e) {
+     if(e.target.nodeName==='INPUT'){
     e.preventDefault();
     document.getElementById('Calculator').style.display = 'none';
     document.getElementById('Styling').style.display = 'none';
@@ -50,6 +51,7 @@ function showDiv(e) {
     show.style.display = 'block';
 
     drawCanvas(e.target.value);
+     }
 }
 
 //using canvas to write heading based on user choice Calculator/Styling/Time 
